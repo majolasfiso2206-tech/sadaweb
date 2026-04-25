@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - SADA</title>
+</head>
+<body>
+   
+    <header>
+    <!-- Navigation -->
+  <nav>
+    <a href="index.html">HOME</a> |
+    <a href="about.html">ABOUT US</a> |
+    <a href="services.html">SERVICES</a> |
+    <a href="contact.html">CONTACT US</a> |
+    <a href="portal.html">STUDENT PORTAL</a>
+  </nav>
+  
+  <!-- Routine Tracking Portal -->
+  <section>
+    <h1>Routine Tracking Portal</h1>
+    <p>Welcome to the Student Portal. Please log in below.</p>
+  </section>
+<!-- Disclaimer -->
+  <section>
+    <img src="images/hero/LOGO.jpeg" width="400" height="470" alt="SADA Logo"> 
+    <p><small>Disclaimer: Access is restricted to registered students only. Unauthorized use is prohibited.</small></p>
+  </section>
+
+  <h2>Routine Tracking Portal</h2>
+  <form action="#" method="post">
+    <!-- Learner Details -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="grade">Grade:</label><br>
+    <select id="grade" name="grade" required>
+      <option value="">--Select Grade--</option>
+      <option value="8">Grade 8</option>
+      <option value="9">Grade 9</option>
+      <option value="10">Grade 10</option>
+      <option value="11">Grade 11</option>
+      <option value="12">Grade 12</option>
+    </select><br><br>
+
+   <label for="studentcode">Student Code:</label><br>
+    <input type="text" id="studentcode" name="studentcode" 
+       placeholder="Enter your student code"
+       title="Please enter your assigned student code" 
+       required><br><br> 
+    <label for="phone">Phone Number (South Africa):</label><br>
+    <input type="tel" id="phone" name="phone"
+           pattern="^0\d{9}$"
+           title="Enter a valid 10-digit South African phone number starting with 0"
+           required><br><br>
+    
+           <p><strong>Note:</strong> The phases (Phase 1 to Phase 6) shown in this portal are the ones that appear in your personalised routine. You are expected to complete all of them. If any phase is missed, you must provide a reason in the explanation box before submitting.</p>
+     
+
+    <!-- Phases -->
+    <h3>Routine Phases</h3>
+    <label><input type="checkbox" name="phase[]" value="Phase 1"> Phase 1</label><br>
+    <label><input type="checkbox" name="phase[]" value="Phase 2"> Phase 2</label><br>
+    <label><input type="checkbox" name="phase[]" value="Phase 3"> Phase 3</label><br>
+    <label><input type="checkbox" name="phase[]" value="Phase 4"> Phase 4</label><br>
+    <label><input type="checkbox" name="phase[]" value="Phase 5"> Phase 5</label><br>
+    <label><input type="checkbox" name="phase[]" value="Phase 6"> Phase 6</label><br><br>
+
+    <!-- Explanation if missed -->
+    <label for="reason">If you missed any phase, explain why:</label><br>
+    <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+
+    <!-- Submit -->
+    <button type="submit">Submit</button>
+  </form>
+
+    <!-- Forgot Password Link -->
+    <p>
+  <a href="mailto:info@sadisciplineacademy.co.za?subject=Student Code Reset">
+    Forgot Student Code?
+  </a>
+</p>
+
+ 
+    <!-- Footer -->
+    <footer>
+  
+    <div>
+      <h3>South African Discipline Academy&trade;</h3>
+      <p>Discipline Rooted in South Africa, Success Beyond Borders</p>
+    </div>
+
+       
+    </div>
+
+    <div>
+      <h4>Contact Us</h4>
+      <a href="mailto:info@sadisciplineacademy.co.za">
+      <img src="C:\Users\27723\OneDrive\Documents\web2026\sadaweb\images\icons\gmail.png" width="30" height="30" alt="Email"> 
+      </a> 
+       <a href="tel:+27 723 140 840">
+      <img src="C:\Users\27723\OneDrive\Documents\web2026\sadaweb\images\icons\phone.png" width="30" height="30" alt="Phone">
+      </a>
+      <p>Working Hours: Mon–Fri 8 AM – 5 PM</p>
+    </div>
+
+   <div>
+       <h4>Follow Us</h4>
+  <a href="https://www.facebook.com/share/1HBwMJVQP3/">
+    <img src="C:\Users\27723\OneDrive\Documents\web2026\sadaweb\images\icons\facebook.png" alt="Facebook" width="30" height="30">
+  </a>
+  <a href="https://wa.me/qr/XKIOKYFAFIOEA1">
+    <img src="C:\Users\27723\OneDrive\Documents\web2026\sadaweb\images\icons\whatsapp.png" alt="WhatsApp" width="30" height="30">
+  </a>
+  <a href="https://www.instagram.com/mafiswana22/">
+    <img src="C:\Users\27723\OneDrive\Documents\web2026\sadaweb\images\icons\instagram.png" alt="Instagram" width="30" height="30">
+  </a>
+    </div>
+  </div> 
+  <div>
+    <p>© 2026 South African Discipline Academy&trade;. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
