@@ -1,9 +1,9 @@
 # SADA Website - South African Discipline Academy
 
-## 📋 Project Overview
+## 📋rview
 This is the official website for the South African Discipline Academy (SADA), a discipline and time management coaching programme for high school learners.
 
-## 🗂️ Directory Structure
+## Directory Structure
 
 ```
 sadaweb/
@@ -54,10 +54,10 @@ sadaweb/
 - **Light Blue**: `#043283` (Catalina Blue) - Background gradient
 - **Semi-transparent White**: `rgba(255,255,255,0.1)` - Content boxes
 
-## 📱 Responsive Design
+##  Responsive Design
 All styles use **flexbox** and **CSS Grid** with `flex-wrap: wrap` and `@media` queries for mobile responsiveness.
 
-## 🔧 HTML Structure Notes
+## HTML Structure Notes
 
 ### Shared Components
 All pages include:
@@ -93,7 +93,7 @@ All pages include:
 - Phone and email links
 - Social media links (Facebook, WhatsApp)
 
-## 🚀 How to Use
+## How to Use
 
 1. **View Website**: Open `index.html` in a browser
 2. **Edit Content**: Modify HTML files directly
@@ -101,7 +101,7 @@ All pages include:
 4. **Add Images**: Place in appropriate `/images/` subdirectory
 5. **Share Code**: Push to GitHub using standard git workflow
 
-## 📝 Code Maintenance
+##  Code Maintenance
 
 ### Common Updates
 - **Add Page**: Create new `.html` file with navbar/footer template
