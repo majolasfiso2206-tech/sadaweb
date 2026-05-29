@@ -1,6 +1,6 @@
 # SADA Website - South African Discipline Academy
 
-## 📋rview
+## Review
 This is the official website for the South African Discipline Academy (SADA), a discipline and time management coaching programme for high school learners.
 
 ## Directory Structure
