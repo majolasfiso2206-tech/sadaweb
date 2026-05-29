@@ -1,4 +1,4 @@
-# 🔧 Code Components & Templates
+#  Code Components & Templates
 
 ## Shared Navigation Bar Component
 
