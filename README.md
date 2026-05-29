@@ -28,7 +28,7 @@ sadaweb/
 └── .gitignore                    # Git ignore rules
 ```
 
-## 🎨 CSS Architecture
+## CSS Architecture
 
 ### Utility Classes (Reusable)
 - `.box-container` - Standard box styling (background, padding, border-radius)
@@ -71,7 +71,7 @@ All pages include:
 - Proper form labeling
 - Mobile viewport meta tag
 
-## ✨ Key Features
+## Key Features
 
 ### Navigation
 - Consistent navbar across all pages
@@ -116,13 +116,13 @@ All pages include:
 4. Test form submissions
 5. Commit changes with clear messages
 
-## 🐛 Recent Fixes
-- ✅ Fixed CSS duplicate rules (footer styling)
-- ✅ Consolidated repeated box styling into utility classes
-- ✅ Fixed HTML typos (class attributes)
-- ✅ Added .gitignore for proper repo sharing
+##  Recent Fixes
+-  Fixed CSS duplicate rules (footer styling)
+-  Consolidated repeated box styling into utility classes
+-  Fixed HTML typos (class attributes)
+-  Added .gitignore for proper repo sharing
 
-## 📞 Contact
+## Contact
 **Email**: info@sadisciplineacademy.co.za  
 **Phone**: +27 723 140 840  
 **Hours**: Mon–Fri 8 AM – 5 PM | Sat 9 AM – 1 PM
