@@ -209,7 +209,7 @@ footer img {
 
 ---
 
-## 📋 Checklist for New Pages
+##  Checklist for New Pages
 
 When creating a new page, include:
 
@@ -226,7 +226,7 @@ When creating a new page, include:
 
 ---
 
-## 🔍 Naming Conventions
+## Naming Conventions
 
 ### CSS Classes
 - Use kebab-case: `.welcome-box`, `.service-section`
@@ -243,27 +243,27 @@ When creating a new page, include:
 
 ---
 
-## 🚨 Common Mistakes to Avoid
+##  Common Mistakes to I need to Avoid
 
-1. ❌ Copy-pasting instead of using utility classes
-2. ❌ Inconsistent navbar/footer across pages
-3. ❌ Inline styles instead of CSS classes
-4. ❌ Missing alt text on images
-5. ❌ Not testing mobile responsiveness
-6. ❌ Typos in class names (check carefully!)
-7. ❌ Unused CSS rules cluttering the stylesheet
+1.  Copy-pasting instead of using utility classes
+2.  Inconsistent navbar/footer across pages
+3.  Inline styles instead of CSS classes
+4.  Missing alt text on images
+5.  Not testing mobile responsiveness
+6.  Typos in class names (check carefully!)
+7.  Unused CSS rules cluttering the stylesheet
 
 ---
 
-## ✅ Best Practices
+##  Best Practices
 
-1. ✅ Use semantic HTML (`<section>`, `<article>`, `<nav>`)
-2. ✅ Keep related CSS rules together
-3. ✅ Use comments for major sections
-4. ✅ Test all links before deployment
-5. ✅ Use descriptive class names
-6. ✅ Group responsive media queries at the end
-7. ✅ Use consistent indentation (2 spaces)
+1.  Use semantic HTML (`<section>`, `<article>`, `<nav>`)
+2.  Keep related CSS rules together
+3.  Use comments for major sections
+4.  Test all links before deployment
+5.  Use descriptive class names
+6.  Group responsive media queries at the end
+7.  Use consistent indentation (2 spaces)
 
 ---
 
