@@ -1,0 +1,35 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE/Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled/Generated Files
+*.css.map
+*.js.map
+
+# Node Modules (if using npm in future)
+node_modules/
+package-lock.json
+
+# Environment Files
+.env
+.env.local
+
+# Build/Output Files
+dist/
+build/
+*.zip
+
+# Temporary Files
+*.tmp
+~*
+
+# OS-specific
+desktop.ini

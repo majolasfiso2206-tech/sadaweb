@@ -1,0 +1,726 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(to right, #043283, #739FCA); /* Catalina Blue → Glacier */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #060B39; /* Deep Cove */
+  padding: 1rem;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: #F9751A; /* Ecstasy */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #739FCA; /* Glacier hover */
+}
+
+/* Hero Section */
+.welcome-box {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: rgba(6, 11, 57, 0.8); /* Semi-transparent Deep Cove */
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.welcome-box h1 {
+  font-size: 2rem;
+  color: #F9751A;
+  line-height: 1.4;
+}
+
+/* Logo + Intro */
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.logo-box img.logo {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.intro-text {
+  flex: 1;
+  font-size: 1.1rem;
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+/* Mission & Vision */
+.mission-box {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 800px;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #F9751A;
+  margin-bottom: 1rem;
+}
+
+.mission-title {
+  font-size: 1.8rem;
+  color: #F9751A;
+  margin-bottom: 1rem;
+}
+
+.mission-text {
+  font-size: 1.1rem;
+}
+
+/* Testimonials */
+.testimonials h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #F9751A;
+  margin-bottom: 2rem;
+}
+
+.testimonials div {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.testimonials div > div {
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 280px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.testimonials div > div:hover {
+  transform: translateY(-10px) scale(1.05);
+  background: rgba(249,117,26,0.2); /* Ecstasy tint */
+}
+
+.testimonials div p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials div h4 {
+  color: #739FCA;
+  font-weight: bold;
+}
+/* Footer (keep your original but slightly enhanced spacing) */
+footer {
+  background-color: #060B39; /* Deep Cove */
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+footer a {
+  color: #F9751A; /* Ecstasy */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #739FCA; /* Glacier hover */
+}
+
+footer img {
+  margin: 0 0.5rem;
+}
+
+footer {
+  margin-top: 3rem; /* creates breathing room above footer */
+}
+
+/* Reusable Box Utility Classes */
+.box-container {
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+}
+
+.box-container-large {
+  max-width: 1000px;
+}
+
+.box-container-medium {
+  max-width: 900px;
+}
+/* Headline */
+header {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #F9751A;
+  margin-bottom: 1rem;
+}
+
+header h2 {
+  font-size: 1.4rem;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* About History Section */
+.about-history {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 3rem auto;
+  max-width: 1100px;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.history-logo img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.history-text {
+  flex: 1;
+}
+
+.history-text h3 {
+  font-size: 1.6rem;
+  color: #F9751A;
+  margin-bottom: 1rem;
+}
+
+.history-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Team Section */
+.team-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.team-image img {
+  width: 250px;   /* adjust size */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.team-info {
+  flex: 1;
+}
+
+.team-info h2 {
+  font-size: 1.5rem;
+  color: #739FCA;
+  margin-bottom: 1rem;
+}
+
+.team-info p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.team-section h1 {
+  text-align: center;   /* centers the text */
+  color: #F9751A;       /* orange color */
+  font-size: 2.2rem;    /* adjust size */
+  margin-bottom: 2rem;  /* spacing below */
+}
+/* Services Section */
+.services-section {
+  max-width: 1100px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Each Service Box */
+.service-box {
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center; /* centers heading, image, and text */
+}
+
+.section-heading h3,
+.service-box h3,
+.breakdown-box h3 {
+  color: #F9751A;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.service-box img {
+  width: 100%;
+  max-width: 600px; /* controls image size */
+  height: auto;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.service-box p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+/* Detailed Breakdown Section */
+.details-section {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.details-section h1 {
+  color: #F9751A;
+  margin-bottom: 1rem;
+}
+
+.details-section h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.details-section img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.details-section img:hover {
+  transform: scale(1.1);
+}
+/* Banking Section */
+.banking-section {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.banking-section h4 {
+  color: #739FCA;
+  margin-bottom: 1rem;
+}
+
+.banking-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/* Note Heading */
+.note {
+  text-align: center;
+  color: #739FCA;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  max-width: 900px;
+}
+
+/* Breakdown Section */
+.breakdown-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+/* Each Package Box */
+.breakdown-box {
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.breakdown-box:hover {
+  transform: translateY(-10px) scale(1.02);
+  background: rgba(249,117,26,0.2); /* Ecstasy tint */
+}
+
+.breakdown-box h3 {
+  color: #F9751A;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.breakdown-box p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #fff;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  margin: 4rem auto;
+}
+
+.contact-section h2 {
+  color: #F9751A;
+  margin-bottom: 1rem;
+}
+
+.contact-link img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  background: #060B39;
+  padding: 1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-link img:hover {
+  transform: scale(1.2);
+  background: #739FCA;
+}
+/* Contact Header */
+.contact-header {
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 900px;
+}
+
+.contact-header h1 {
+  color: #F9751A;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  color: #fff;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Main Section: Form + Location side by side */
+.contact-main {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 3rem auto;
+}
+
+.contact-form, .contact-location {
+  flex: 1;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-form h2, .contact-location h2 {
+  color: #F9751A;
+  margin-bottom: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0.8rem 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #F9751A;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #739FCA;
+}
+
+/* Contact Info + Working Hours */
+.contact-info, .working-hours {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.contact-info h2, .working-hours h2 {
+  color: #F9751A;
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: #739FCA;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+/* Header */
+.portal-header .welcome-box {
+  text-align: center;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.portal-header h1 {
+  color: #F9751A;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Disclaimer */
+.portal-disclaimer {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.portal-disclaimer img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Form Section */
+.portal-form {
+  max-width: 700px;
+  margin: 3rem auto;
+  background: rgba(255,255,255,0.1);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.portal-form h2 {
+  text-align: center;
+  color: #F9751A;
+  margin-bottom: 1.5rem;
+}
+
+.portal-form label {
+  display: block;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.portal-form input, 
+.portal-form select, 
+.portal-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.portal-form button {
+  margin-top: 1.5rem;
+  background: #F9751A;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.portal-form button:hover {
+  background: #739FCA;
+}
+
+.portal-form a {
+  color: #739FCA;
+  text-decoration: none;
+}
+
+.portal-form a:hover {
+  text-decoration: underline;
+}
+.phases {
+  display: flex;
+  flex-direction: column;   /* stack phases vertically */
+  gap: 0.6rem;              /* even spacing between rows */
+}
+
+.phases label {
+  display: inline-flex;     /* keep checkbox + text inline */
+  align-items: center;      /* align checkbox with text baseline */
+  color: #fff;
+  font-size: 1rem;
+}
+
+.phases input[type="checkbox"] {
+  margin-right: 0.5rem;     /* space between box and text */
+}
+/* Apply full width only to text inputs, selects, and textarea */
+.portal-form input[type="text"],
+.portal-form input[type="email"],
+.portal-form input[type="tel"],
+.portal-form select,
+.portal-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Checkboxes should stay small */
+.phases input[type="checkbox"] {
+  width: auto;            /* prevents stretching */
+  margin-right: 0.5rem;   /* spacing between box and text */
+}
+.phases label {
+  display: block;       /* each phase on its own line */
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+/* Mobile phones */
+@media only screen and (max-width: 600px) {
+  /* Forms shrink padding */
+  .portal-form {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .portal-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .portal-form button {
+    width: 100%; /* easier to tap */
+  }
+
+  .phases label {
+    font-size: 0.95rem;
+  }
+
+  /* Images scale down */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 900px) {
+  /* Contact page: stack form + location */
+  .contact-main {
+    flex-direction: column;
+  }
+
+  .contact-form, .contact-location {
+    width: 100%;
+  }
+}
+/* Global image scaling */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 600px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+  p  { font-size: 0.95rem; }
+
+  .portal-form {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .portal-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .portal-form button {
+    width: 100%;
+    padding: 14px; /* bigger tap target */
+  }
+
+  .phases label {
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets */
+@media only screen and (max-width: 900px) {
+  .contact-main {
+    flex-direction: column;
+  }
+
+  .contact-form, .contact-location {
+    width: 100%;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .welcome-box {
+    max-width: 1100px;
+  }
+}

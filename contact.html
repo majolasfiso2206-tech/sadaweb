@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - SADA</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
-    <header>
     <!-- Navigation -->
+     <div class="navbar">
   <nav>
-    <a href="index.html">HOME</a> |
-    <a href="about.html">ABOUT US</a> |
-    <a href="services.html">SERVICES</a> |
-    <a href="contact.html">CONTACT US</a> |
+    <a href="index.html">HOME</a> 
+    <a href="about.html">ABOUT US</a> 
+    <a href="services.html">SERVICES</a> 
+    <a href="contact.html">CONTACT US</a> 
     <a href="portal.html">STUDENT PORTAL</a>
   </nav>
+</div>
+  <div class="welcome-box">
     <h1>Contact Us</h1>
-    <p>We’d love to hear from you. Please fill out the form below or reach us through our contact details.</p>
-</header>
+    <h3>We’d love to hear from you.</h3>
+  </div> 
+  <section class="contact-header">
+    <h1>Please fill out the form below or reach us through our contact details.</h1>
+  </section>
 
   <!-- Contact Form -->
-  <section>
+  <section class="contact-main">
+    <div class="contact-form">
     <h2>Send Us a Message</h2>
     <form action="mailto:info@sadisciplineacademy.co.za" method="post" enctype="text/plain">
       <input type="text" name="name" placeholder="Your Name" required><br><br>
@@ -29,25 +37,26 @@
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Submit</button>
     </form>
-  </section>
+  </div>
 
   <!-- Location -->
-  <section>
+   <div class=\"contact-location\">
     <h2>Location</h2>
     <p> Empangeni, KwaZulu-Natal, South Africa</p>
     <!--Google Maps embed -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.711629898528!2d31.89892777535186!3d-28.7580255755964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1efa10b4ca166ee9%3A0x3d011069e0f0e948!2sFive%20Ways%20Mall!5e0!3m2!1sen!2sza!4v1777061341470!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
   </section>
 
   <!-- Contact Info -->
-  <section>
+  <section class="contact-info">
     <h2>Contact Info</h2>
     <p>Email:  <a href="mailto:info@sadisciplineacademy.co.za">info@sadisciplineacademy.co.za</a></p>
     <p>Phone:<a href="tel:+27 723 140 840">+27 723 140 840</a></p>
   </section>
 
   <!-- Working Hours -->
-  <section>
+  <section class="working-hours">
     <h2>Working Hours</h2>
     <p>Monday – Friday: 8 AM – 5 PM</p>
     <p>Saturday: 9 AM – 1 PM</p>
@@ -56,46 +65,47 @@
 
  
  <!-- Footer -->
-    <footer>
-  
-    <div>
-      <h3>South African Discipline Academy&trade;</h3>
-      <p>Discipline Rooted in South Africa, Success Beyond Borders</p>
-    </div>
-
-    <div>
-      <h4>Quick Links</h4>
-      <a href="Detailed Breakdown.html">You Want A Detailed Breakdown Of What We Offer ?</a> 
-        <p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvO3RG-C7baYHBlSkjq3OkxenrDCZ-SoeYzi7Da3I5WyfHOg/viewform?embedded=true" width="640" height="3196" frameborder="0" marginheight="0" marginwidth="0">Schools Register Now for Workshops</a>
-    
-  </p>
-    </div>
-
-   <div>
-       <h4>Follow Us</h4>
-  <a href="https://www.facebook.com/share/1HBwMJVQP3/">
-    <img src="images/icons/facebook.png" alt="Facebook" width="30" height="30">
-  </a>
-  <a href="https://wa.me/qr/XKIOKYFAFIOEA1">
-    <img src="images/icons/whatsapp.png" alt="WhatsApp" width="30" height="30">
-  </a>
-  <a href="https://www.instagram.com/mafiswana22/">
-    <img src="images/icons/instagram.png" alt="Instagram" width="30" height="30">
-  </a>
-    </div>
+   <footer>
+  <div>
+    <h3>South African Discipline Academy&trade;</h3>
+    <p>Discipline Rooted in South Africa, Success Beyond Borders</p>
   </div>
+
+  <div>
+    <h4>Quick Links</h4>
+    <a href="Detailed Breakdown.html">Detailed Breakdown of Our Offers</a><br>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvO3RG-C7baYHBlSkjq3OkxenrDCZ-SoeYzi7Da3I5WyfHOg/viewform" target="_blank">
+      Schools Register Now for Workshops
+    </a>
+  </div>
+
+  <div>
+    <h4>Contact Us</h4>
+    <a href="mailto:info@sadisciplineacademy.co.za">
+      <img src="images/icons/gmail.png" alt="Email" width="30" height="30">
+    </a>
+    <a href="tel:+27 723 140 840">
+      <img src="images/icons/phone.png" alt="Phone" width="30" height="30">
+    </a>
+    <p>Working Hours: Mon–Fri 8 AM – 5 PM  | Sat 9 AM – 1 PM</p>
+  </div>
+
+  <div>
+    <h4>Follow Us</h4>
+      <a href="https://www.facebook.com/share/1HBwMJVQP3/">
+       <img src="images/icons/facebook.png" alt="Facebook" width="30" height="30">
+      </a>
+      <a href="https://wa.me/qr/XKIOKYFAFIOEA1">
+        <img src="images/icons/whatsapp.png" alt="WhatsApp" width="30" height="30">
+      </a>
+      <a href="https://www.instagram.com/mafiswana22/">
+       <img src="images/icons/instagram.png" alt="Instagram" width="30" height="30">
+      </a>
+  </div>
+
   <div>
     <p>© 2026 South African Discipline Academy&trade;. All rights reserved.</p>
   </div>
 </footer>
-
 </body>
-</html>
-
-
-
-
-
-
 </html>
