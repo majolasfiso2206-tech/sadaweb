@@ -30,22 +30,23 @@
   <section class="services-section">
 
   <div class="service-box">
-    <h3>Package 1: Routine Creation (Registration)</h3>
-    <img src="images/services/Package 1.png" width="600" height="auto">
-    <p>Cost: R200 once‑off registration. Learners receive a personalized routine in a 30–60 minute session (phone or face‑to‑face in Empangeni) and are registered into the system.</p>
-  </div>
-  
-  <div class="service-box">
-    <h3>Package 2: Routine + Daily Check‑ins</h3>
-    <img src="images/services/Package 2.png" width="600" height="auto">
-    <p>Cost: R480 initially, thereafter R280 per month. Includes routine creation plus daily 5‑minute monitoring calls to track progress and provide accountability.</p>
-  </div>
+  <h3>Package 1: Routine Creation (Registration)</h3>
+  <img src="images/services/Package 1.png" width="30" height="30" onclick="openLightbox(this)">
+  <p>Cost: R200 once‑off registration. Learners receive a personalized routine in a 30–60 minute session (phone or face‑to‑face in Empangeni) and are registered into the system.</p>
+</div>
 
-  <div class="service-box">
-    <h3>Package 3: Premium Support</h3>
-    <img src="images/services/Package 3.png" width="600" height="auto">
-    <p>Cost: R650 in the first month, thereafter R450 per month. Includes routine creation, daily monitoring, weekly 30‑minute Top Achiever calls (Teams/WhatsApp/Direct), and an end‑term progress review.</p>
-  </div>  
+<div class="service-box">
+  <h3>Package 2: Routine + Daily Check‑ins</h3>
+  <img src="images/services/Package 2.png" width="30" height="30" onclick="openLightbox(this)">
+  <p>Cost: R480 initially, thereafter R280 per month. Includes routine creation plus daily 5‑minute monitoring calls to track progress and provide accountability.</p>
+</div>
+
+<div class="service-box">
+  <h3>Package 3: Premium Support</h3>
+  <img src="images/services/Package 3.png" width="30" height="30" onclick="openLightbox(this)">
+  <p>Cost: R650 in the first month, thereafter R450 per month. Includes routine creation, daily monitoring, weekly 30‑minute Top Achiever calls (Teams/WhatsApp/Direct), and an end‑term progress review.</p>
+</div>
+
   </section>
 
   <!--Detailed Breakdown Quick Link-->
@@ -115,6 +116,24 @@
     <p>© 2026 South African Discipline Academy&trade;. All rights reserved.</p>
   </div>
 </footer>
+<!-- Lightbox -->
+<div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+     background:rgba(0,0,0,0.8); text-align:center; z-index:1000;">
+  <span onclick="closeLightbox()" style="color:white; font-size:30px; cursor:pointer; position:absolute; top:20px; right:40px;">×</span>
+  <img id="lightbox-img" style="max-width:90%; max-height:80%; margin-top:50px;">
+</div>
+
+<script>
+function openLightbox(img) {
+  document.getElementById("lightbox").style.display = "block";
+  document.getElementById("lightbox-img").src = img.src;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+
 
 </body>
 </html>

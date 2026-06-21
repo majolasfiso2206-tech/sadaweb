@@ -305,12 +305,17 @@ header h2 {
 
 .service-box img {
   width: 100%;
-  max-width: 600px; /* controls image size */
+  max-width: 250px; /* controls image size */
   height: auto;
   border-radius: 8px;
   margin: 1rem 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
+
+.service-box img {
+  cursor: pointer; /* shows the hand icon */
+}
+
 
 .service-box p {
   font-size: 1.05rem;
@@ -371,6 +376,19 @@ header h2 {
 }
 
 /* Breakdown Section */
+
+/* Search Bar Styling */
+    .search-bar {
+      max-width: 400px;
+      width: 100%;
+      padding: 10px;
+      margin: 0 auto 30px;
+      display: block;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
 .breakdown-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));

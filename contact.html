@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - SADA</title>
     <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
 </head>
 <body>
@@ -27,26 +28,29 @@
     <h1>Please fill out the form below or reach us through our contact details.</h1>
   </section>
 
-  <!-- Contact Form -->
-  <section class="contact-main">
-    <div class="contact-form">
+  <!-- Contact Section -->
+<section class="contact-main">
+
+  <!-- Form on the LEFT -->
+  <div class="contact-form">
     <h2>Send Us a Message</h2>
     <form action="mailto:info@sadisciplineacademy.co.za" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required><br><br>
-      <input type="email" name="email" placeholder="Your Email" required><br><Br>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Submit</button>
     </form>
   </div>
 
-  <!-- Location -->
-   <div class=\"contact-location\">
+  <!-- Map on the RIGHT -->
+  <div class="contact-location">
     <h2>Location</h2>
-    <p> Empangeni, KwaZulu-Natal, South Africa</p>
-    <!--Google Maps embed -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.711629898528!2d31.89892777535186!3d-28.7580255755964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1efa10b4ca166ee9%3A0x3d011069e0f0e948!2sFive%20Ways%20Mall!5e0!3m2!1sen!2sza!4v1777061341470!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Empangeni, KwaZulu-Natal, South Africa</p>
+    <div id="map" style="height:450px;"></div>
   </div>
-  </section>
+
+</section>
+
 
   <!-- Contact Info -->
   <section class="contact-info">
@@ -107,5 +111,22 @@
     <p>© 2026 South African Discipline Academy&trade;. All rights reserved.</p>
   </div>
 </footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  // Create map centered on Empangeni
+  const map = L.map('map').setView([-28.7580, 31.8989], 14);
+
+  // Add OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Add a marker for SADA location
+  L.marker([-28.7580, 31.8989]).addTo(map)
+    .bindPopup("<b>SADA Academy</b><br>Empangeni, KZN")
+    .openPopup();
+</script>
+
 </body>
 </html>

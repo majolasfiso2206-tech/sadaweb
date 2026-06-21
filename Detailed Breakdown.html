@@ -21,10 +21,14 @@
 </div>
  <h2 class="note">N/B: Please note that the packages listed below represent the structured support options available to learners</h2>
   <!--Detailed Breakdown for Offers-->
+<!-- Search bar ABOVE the grid -->
+  <input type="text" id="searchBox" placeholder="Search packages..." class="search-bar">
   <section class="breakdown-section">
-    <article class="breakdown-box">
-    <h3>Package 1: Routine Creation (Registration)</h3>
-    <p>
+
+  <!-- Package 1 -->
+  <article class="breakdown-box">
+    <h3 onclick="toggleBox(this)">Package 1: Routine Creation (Registration)</h3>
+    <p style="display:none;">
       Our Routine Creation package is the starting point for every learner at SADA. 
       For a once‑off registration fee of R200, learners receive a personalized routine 
       designed to fit their academic and personal needs. This 30–60‑minute session can 
@@ -35,9 +39,10 @@
     </p>
   </article>
 
+  <!-- Package 2 -->
   <article class="breakdown-box">
-    <h3>Package 2: Routine + Daily Check‑ins</h3>
-    <p>
+    <h3 onclick="toggleBox(this)">Package 2: Routine + Daily Check‑ins</h3>
+    <p style="display:none;">
       The Routine + Daily Check‑ins package builds on the foundation of routine creation 
       by adding consistent accountability. For R480 initially, followed by R280 per month, 
       learners benefit from daily five‑minute monitoring calls. These check‑ins provide 
@@ -47,9 +52,10 @@
     </p>
   </article>
 
+  <!-- Package 3 -->
   <article class="breakdown-box">
-    <h3>Package 3: Premium Support</h3>
-    <p>
+    <h3 onclick="toggleBox(this)">Package 3: Premium Support</h3>
+    <p style="display:none;">
       Our Premium Support package is designed for learners who want maximum guidance 
       and mentorship. The first month costs R650, followed by R450 per month thereafter. 
       This package includes routine creation, daily monitoring, and weekly 30‑minute calls 
@@ -58,11 +64,12 @@
       for improvement. Premium Support ensures that learners are not only disciplined 
       but also inspired by role models who have excelled academically.
     </p>
-     </article>
+  </article>
 
+  <!-- Recruiter Incentive -->
   <article class="breakdown-box">
-    <h3>Recruiter Incentive</h3>
-    <p>
+    <h3 onclick="toggleBox(this)">Recruiter Incentive</h3>
+    <p style="display:none;">
       At SADA, we reward commitment and results. Learners who demonstrate discipline 
       and progress can earn part‑time roles as recruiters, helping to expand the academy’s 
       reach. Recruiters receive a 15% commission for every new learner they bring in, 
@@ -71,7 +78,8 @@
       contributing to the success of others.
     </p>
   </article>
-  </section>
+
+</section>
 
    <!-- Contact Us for Assistance -->
   <section class="contact-section">
@@ -124,5 +132,26 @@
     <p>© 2026 South African Discipline Academy&trade;. All rights reserved.</p>
   </div>
 </footer>
+<!-- JavaScript -->
+  <script>
+    function toggleBox(element) {
+      const content = element.nextElementSibling;
+      content.style.display = content.style.display === "none" ? "block" : "none";
+    }
+
+    const searchBox = document.getElementById("searchBox");
+    searchBox.addEventListener("keyup", () => {
+      const filter = searchBox.value.toLowerCase();
+      document.querySelectorAll(".breakdown-box").forEach(box => {
+        if (box.innerText.toLowerCase().includes(filter)) {
+          box.style.display = "";
+          box.querySelector("p").style.display = "block"; // show description when searching
+        } else {
+          box.style.display = "none";
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
