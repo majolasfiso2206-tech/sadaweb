@@ -1,9 +1,9 @@
 # SADA Website - South African Discipline Academy
 
-## 📋 Project Overview
+## Review
 This is the official website for the South African Discipline Academy (SADA), a discipline and time management coaching programme for high school learners.
 
-## 🗂️ Directory Structure
+## Directory Structure
 
 ```
 sadaweb/
@@ -28,7 +28,7 @@ sadaweb/
 └── .gitignore                    # Git ignore rules
 ```
 
-## 🎨 CSS Architecture
+## CSS Architecture
 
 ### Utility Classes (Reusable)
 - `.box-container` - Standard box styling (background, padding, border-radius)
@@ -54,10 +54,10 @@ sadaweb/
 - **Light Blue**: `#043283` (Catalina Blue) - Background gradient
 - **Semi-transparent White**: `rgba(255,255,255,0.1)` - Content boxes
 
-## 📱 Responsive Design
+##  Responsive Design
 All styles use **flexbox** and **CSS Grid** with `flex-wrap: wrap` and `@media` queries for mobile responsiveness.
 
-## 🔧 HTML Structure Notes
+## HTML Structure Notes
 
 ### Shared Components
 All pages include:
@@ -71,7 +71,7 @@ All pages include:
 - Proper form labeling
 - Mobile viewport meta tag
 
-## ✨ Key Features
+## Key Features
 
 ### Navigation
 - Consistent navbar across all pages
@@ -93,7 +93,7 @@ All pages include:
 - Phone and email links
 - Social media links (Facebook, WhatsApp)
 
-## 🚀 How to Use
+## How to Use
 
 1. **View Website**: Open `index.html` in a browser
 2. **Edit Content**: Modify HTML files directly
@@ -122,7 +122,7 @@ GitHub: [majolasfiso2206-tech/sadaweb](https://github.com/majolasfiso2206-tech/s
 4. **Add Images**: Place in appropriate `/images/` subdirectory
 5. **Share Code**: Push to GitHub using standard git workflow
 
-## 📝 Code Maintenance
+##  Code Maintenance
 
 ### Common Updates
 - **Add Page**: Create new `.html` file with navbar/footer template
@@ -137,13 +137,13 @@ GitHub: [majolasfiso2206-tech/sadaweb](https://github.com/majolasfiso2206-tech/s
 4. Test form submissions
 5. Commit changes with clear messages
 
-## 🐛 Recent Fixes
-- ✅ Fixed CSS duplicate rules (footer styling)
-- ✅ Consolidated repeated box styling into utility classes
-- ✅ Fixed HTML typos (class attributes)
-- ✅ Added .gitignore for proper repo sharing
+##  Recent Fixes
+-  Fixed CSS duplicate rules (footer styling)
+-  Consolidated repeated box styling into utility classes
+-  Fixed HTML typos (class attributes)
+-  Added .gitignore for proper repo sharing
 
-## 📞 Contact
+## Contact
 **Email**: info@sadisciplineacademy.co.za  
 **Phone**: +27 723 140 840  
 **Hours**: Mon–Fri 8 AM – 5 PM | Sat 9 AM – 1 PM
