@@ -32,7 +32,7 @@
 
 ---
 
-### 2. **HTML Typos & Errors** 🐛 FIXED
+### 2. **HTML Typos & Errors** FIXED
 
 | File | Line | Issue | Fix |
 |------|------|-------|-----|
