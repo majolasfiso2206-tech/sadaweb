@@ -102,11 +102,11 @@ All pages include:
 ## 📝 Latest Updates (June 2026)
 
 ### Code Quality Enhancements
-- ✅ Eliminated CSS code duplication using reusable utility classes
-- ✅ Fixed HTML validation errors (typos in section/div attributes)
-- ✅ Added comprehensive documentation (COMPONENTS.md, IMPROVEMENTS.md)
-- ✅ Implemented .gitignore for professional GitHub sharing
-- ✅ All pages now follow consistent styling patterns
+-  Eliminated CSS code duplication using reusable utility classes
+-  Fixed HTML validation errors (typos in section/div attributes)
+-  Added comprehensive documentation (COMPONENTS.md, IMPROVEMENTS.md)
+-  Implemented .gitignore for professional GitHub sharing
+-  All pages now follow consistent styling patterns
 
 ### Recent Fixes
 - Fixed `services.html` section markup
@@ -116,7 +116,7 @@ All pages include:
 
 For detailed improvement history, see [IMPROVEMENTS.md](IMPROVEMENTS.md)
 
-## 🔗 Repository
+##  Repository
 
 GitHub: [majolasfiso2206-tech/sadaweb](https://github.com/majolasfiso2206-tech/sadaweb)
 4. **Add Images**: Place in appropriate `/images/` subdirectory
@@ -148,6 +148,16 @@ GitHub: [majolasfiso2206-tech/sadaweb](https://github.com/majolasfiso2206-tech/s
 **Phone**: +27 723 140 840  
 **Hours**: Mon–Fri 8 AM – 5 PM | Sat 9 AM – 1 PM
 
----
-**Last Updated**: May 29, 2026
+ REFERENCES 
+Figma (n.d.) Figma: The collaborative interface design tool. Available at: https://www.figma.com (Accessed: 
+07 April 2026).   
+Canva (n.d.) Canva: Online design and publishing tool. Available at: https://www.canva.com (Accessed: 08 
+April 2026).   
+Google Fonts (n.d.) Google Fonts. Available at: https://fonts.google.com  (Accessed: 10 April 2026).   
+Afrihost (n.d.) Afrihost: Web hosting and internet services. Available at: https://www.afrihost.com 
+(Accessed: 11 April 2026).   
+Flaticon (n.d.) Free icons resource. Available at: https://www.flaticon.com (Accessed: 15 April 2026).   - FontAwesome (n.d.)Icon toolkit and library. Available at: https://fontawesome.com (Accessed: 15 April 
+2026). 
+Unsplash (n.d.) Free stock images. Available at: https://unsplash.com (Accessed: 15 April 2026).   - Pexels (n.d.) Free stock images. Available at: https://www.pexels.com (Accessed: 15 April 2026).
+**Last Updated**: JUNE 22, 2026
 
