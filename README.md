@@ -99,7 +99,7 @@ All pages include:
 2. **Edit Content**: Modify HTML files directly
 3. **Style Changes**: Update `styles.css` for global styling
 
-## 📝 Latest Updates (June 2026)
+##  Latest Updates (June 2026)
 
 ### Code Quality Enhancements
 -  Eliminated CSS code duplication using reusable utility classes
